@@ -1,68 +1,115 @@
 <!DOCTYPE html>
 <html>
         <head>
+                <!--
+                rearranged head and added the base tag
+                -->
+                
+                <base href='https://cobi-a-group-project-geekwisehaleysnyder.c9.io/' />
+                
+                <meta name='viewport' content='width=device-width, initial-scale=1' />
+                <meta charset='UTF-8' />
+                
+                <link rel='stylesheet' href='css/about.css' type='text/css' />
+                <link rel='icon' type='image/png' href='http://geekwiseacademy.com/img/square-owl.png' />
+                
                 <title>Geekwise Academy</title>
-                <link rel='icon' type='image/png' href='http://geekwiseacademy.com/img/square-owl.png'>
-                <meta name='viewport' content='width=device-width, initial-scale=1'>
-                <meta charset='UTF-8'>
-                <link rel='stylesheet' href='css/about.css' type='text/css'>
+                
         </head>
         
         <body> 
-                <div id='nav'>
+               <!--removed it from a div called nav
+                       fixed nesting
+                       putting nav in a header
+                       making nav with anchor links instead of ul li
+                       -->
+                <header>
+                        
+                        
+                        
                         <nav>
-                                <span>
-                                        <ul>
-                                                <li><img src='http://i.imgur.com/RRwJF2Z.png'><a href='about.html'>About</a></li>
-                                                <li><a href='courses.html'>Courses</a></li>
-                                                <li><a href='cohort.html'>Cohort</a></li>
-                                                <li><a href='team.html'>Team</a></li>
-                                                <li><a href='contact.html'>Contact</a></li>
-                                        </ul>
-                                        <div id='imagepng'>
-                                                <img src='http://i.imgur.com/vxjSlIz.png'>
-                                        </div>
-                                </span>
+                                <div id="logo">
+                                        <a href="index.html">
+                                                <img src="http://i.imgur.com/RRwJF2Z.png">
+                                        </a>
+                                </div>
+                                
+                                <a href='about.html'>About</a>
+                                <a href='courses.html'>Courses</a>
+                                <a href='cohort.html'>Cohort</a>
+                                <a href='team.html'>Team</a>
+                                <a href='contact.html'>Contact</a>
+                                
+                                <!--
+                                removed owl image and assigned it
+                                as the background image for the
+                                'nav' inside css
+                                -->
+                                
                         </nav>
-                </div>
-
-
-
-                </div>
-                <span>Learn a real world</span>
-                <span>Technology Skill. Fast.</span>
-                        </nav>
-                    <div id='div1'>
-                        <span>What</span>
-                        <p id='p'>Geekwise Academy is an accelerated training program for current and aspiring technologists. Geekwise Academy teaches trainees hard skills in the technology industry in only six weeks. Each course is fast-paced, rigorous, and narrowly focused on a hard skill that is presently in-demand in the technology industry. </p>
-                        <span>Why</span>
-                        <p>We need more geeks. Lots of them. And good ones. It’s no secret that software and information technology are among the fastest growing industries on the planet. Despite that truth, there simply aren’t enough technologists to keep up with the demand. Not to mention that these industries offer promising careers and have mountains of jobs that are available today. Geekwise Academy exists to fill that demand by rapidly producing high quality technologists, and then connecting those same technologists to real world opportunities.
-                        </p>
-                     </div>
+                        
+                        
+                        
+                </header>
+                
+                <!-- +created a main tag and a section tag
+                        +gave classes to the taglines
+                        +created article tags to seperate 
+                          two sides of the about
+                        +created class box & ids for things within-->
+                
+                <main>
+                        <section>
+                                <p class="tagline">Learn a real world</p>
+                                <p class="tagline">Technology Skill. Fast.</p>
+                        </section>
+                       
+                       <article id="left">
+                           <div class="box" id='what'>
+                                <span>What</span>
+                                <p id='p'>Geekwise Academy is an accelerated training program for current and aspiring technologists. Geekwise Academy teaches trainees hard skills in the technology industry in only six weeks. Each course is fast-paced, rigorous, and narrowly focused on a hard skill that is presently in-demand in the technology industry. </p>
+                           </div>
+                          <div class="box" id="why">
+                                <span>Why</span>
+                                <p>We need more geeks. Lots of them. And good ones. It’s no secret that software and information technology are among the fastest growing industries on the planet. Despite that truth, there simply aren’t enough technologists to keep up with the demand. Not to mention that these industries offer promising careers and have mountains of jobs that are available today. Geekwise Academy exists to fill that demand by rapidly producing high quality technologists, and then connecting those same technologists to real world opportunities.
+                                </p>
+                          </div>
                      
-                     <div id='div2'>
-                         <span>How</span>
-                         <p>The subject matter for each course is selected by an employer who wants to recruit technologists right out of the Geekwise Academy classroom. Geekwise Academy then works with the employer to build a curriculum specifically designed to effectively teach that skill. Each course is then taught by an industry-expert lecturer. Every second of every course is designed to provide you with the skills that technology employers and clients need you to have.</p>
-                         <span>Details</span>
-                         <p>Length: Each course lasts 6 weeks
+                               
+                       </article>
+                       
+                       <article class="right">
+                               <div class="box" id="how">
+                                 <span>How</span>
+                                 <p>The subject matter for each course is selected by an employer who wants to recruit technologists right out of the Geekwise Academy classroom. Geekwise Academy then works with the employer to build a curriculum specifically designed to effectively teach that skill. Each course is then taught by an industry-expert lecturer. Every second of every course is designed to provide you with the skills that technology employers and clients need you to have.</p>
+                                </div> 
+                                
+                                <!-- all four p tags in details had 
+                                originally beena  single p tag-->
+                                
+                                <div class="box" id="details">
+                                 <span>Details</span>
+                                   <p>Length: Each course lasts 6 weeks</p>
 
-                                Time: Each course meets from 6:00-9:00p, two nights per week
+                                   <p>Time: Each course meets from 6:00-9:00p, two nights per week</p>
 
-                                Location: All Classes meet at Bitwise Mural District (2210 San Joaquin St., Fresno, CA 93721)
+                                   <p>Location: All Classes meet at Bitwise Mural District (2210 San Joaquin St., Fresno, CA 93721)</p>
 
-                                Cost: Each class costs only $250
-                        </p>
+                                   <p>Cost: Each class costs only $250</p>
+                                </div>
                          
-                         
-                     </div>
-        <div class='footer'>
-            
-            
-            <a href='signup.html'>WANT TO GEEKWISE? SIGN-UP TODAY</a>
-            
-            
-            
-        </div>
+                       </article>
+                       
+                </main>
+                        
+                    
+                     
+                
+                <!--from div into footer-->
+                     
+                <footer>
+                    <a href='signup.html'>WANT TO GEEKWISE? SIGN-UP TODAY</a>
+                </footer>
             
             
             

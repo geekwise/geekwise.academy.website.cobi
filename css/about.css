@@ -1,25 +1,69 @@
-nav{
+/*
+assigned devinate demension values to html and body
+
+*/
+
+/* height and width into %s */
+
+html,
+body{
+    height: 100%;
+    width: 100%;
     
-    
-}
-html, body{
+    margin: 0px;
+    padding: 0px;
     
     background-color:#7a1501;
 }
+
+/*
+added css for new header tag
+*/
+
+header{
+    background-color: white;
+    float: left;
+    
+    width: 100%;
+    height: 30%;
+    
+    margin: 0px;
+    padding: 0px;
+    
+    text-align: center;
+    
+    background-image: url('http://i.imgur.com/vxjSlIz.png');
+    background-repeat: no-repeat;
+    background-position: ;
+    
+}
+
 img{
+padding: 5%;
+}
+
+
+/*
+removed list item css
+removed/fixed the nav tag
+
+added the background image to the navigation
+*/
+
+nav{
+    height: 100%;
+    width: 100%;
     
-padding:15px;
     
 }
-li{
-    display:inline-block;
-    padding:20px;
+
+/*added in main tag*/
+
+main{
+    height: 100%;
+    width: 100%;
 }
-#nav{
-    
-    background-color:white;
-    
-}
+
 a:hover{
     color:#f9da0c;
 }
@@ -27,35 +71,63 @@ a{
     color:black;
     text-decoration:none;
 }
-ul{
-    text-align:center;
-    
-    font-family:'Lato' sans-serif;
-    font-size:1vw;
-    font-weight:bold;
+
+/*
+removed the unordered list and owl image
+owl image is now set to background image
+
+*/
+
+
+
+/*deleted #div2 and #p as they are irrelavant*/
+
+/**/
+
+.left{
     
 }
-#imagepng{
-    float:right;
-    margin-right:10%;
-    padding-bottom:100px;
+
+.box{
+    
 }
-.footer{
+
+#what{
+    
+}
+
+#why{
+    
+}
+
+.right{
+    
+}
+
+#how{
+}
+
+#details{
+    
+}
+
+
+/* took out div named footer, 
+turned into real footer
+gave height and width
+position rel + top */
+
+footer{
     color:#7a1501;
     background-color:#f9da0c;
     
     text-align:center;
     display:block;
-}
-#div2{
-    display:block;
-    float:left;
     
-    color:white;
-    size:2vw;
+    top: 15%;
+    position: relative;
     
+    height: 5%;
+    width: 100%;
 }
-#p{
-    
-        display: block;
-}
+

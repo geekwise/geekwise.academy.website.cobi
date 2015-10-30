@@ -1,14 +1,19 @@
-html{
+html, body{
     background:url('http://i.imgur.com/tEnxgiC.jpg') no-repeat center center fixed;
-
-      background-size: cover;
+    background-size: cover;
+    
 }
+
 header{
     position:relative;
     bottom:30px;
     background-color:#7a1501;
     width:100%;
     height:100px;
+}
+
+#index_page{
+    float:left;
 }
 
 li{
@@ -42,9 +47,7 @@ a{
 }
 
 a:hover{
-    
     color:#fdda0c;
-    
 }
 img{
     position:relative;
@@ -75,15 +78,4 @@ img{
 	font-family:'Lato' sans-serif;
 	font-weight:lighter;
 }
-footer{
-    width:100%;
-    background-color:#7a1501;
-}
-#signup_2{
-    text-decoration:none;
-    color:#7a1501;
-}
-#Bitwise::after{
-    
-    
-}
+

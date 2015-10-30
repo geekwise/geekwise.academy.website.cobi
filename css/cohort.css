@@ -1,0 +1,92 @@
+/*Top half of the Cohort page*/
+html,body{
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: #7a1501;
+} 
+nav{
+    height:15%;
+    width:100%;    
+}    
+    
+.nav_container{
+    height:100%;
+    width:100%; 
+    
+    background-color:white;
+}    
+
+a{
+    font-size:1.6em;
+    
+    text-decoration:none;   
+    color:#000000;
+}    
+
+.selected{
+    color:maroon;    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*Booty*/
+footer{
+    float: left;
+    /*background-color: blue;*/
+    height: 60%;
+    width: 60%;
+    left: 20%;
+    position: relative;
+    
+}
+.cohort_1, .cohort_2{
+    background-color: #f9da0c;
+    width: 90%;
+    position: relative;
+    left: 5%;
+    
+}
+.cohort_1:before{
+    display:block;
+    float:left;
+    
+    margin-right:.3em;
+    margin-left:.3em;
+    
+    position:relative;
+    bottom:.3em;
+    
+    padding:0;
+    
+    content: '\25b2';
+    transform: rotate(180deg);
+}
+.cohort_1{
+    background-color:#f9da0c;
+    cursor:pointer;
+    font-size:2em;
+}
+.cohort_1:focus + .cohort_1_content{
+    display:block;
+    float:left;
+    width:100%;
+    
+    background-color:#ffffff;
+}
+.cohort_1_content{
+    display:none;
+    font-size:2em;
+}
